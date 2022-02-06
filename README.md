@@ -26,6 +26,8 @@ Once your sheet symbol is created, you will see that the sheet that the symbol w
 
 ![Sheet symbol blocks](documentation/assets/img/CreateSheetSymbolPart3.jpg)
 
+If you want to reuse these schematics in other projects, copy the .SCH files into your new project directory and add them into the Altium project (right click PrjPcb file and select 'Add Existing to Project' option, and then select your schematic sheet).  Next, un-annotate the schematic sheet since the component designators may overlap with other components in the new project.  If you plan on re-using this block often, it may be a good idea to save an un-annotated copy to a folder where you can store other blocks for later re-use.
+
 ## Power Supply Schematic - Fixed 3.3V Regulator AZ1117IH
 
 This schematic block uses an AZ1117IH-3.3TRG1 3.3V 1A linear voltage regulator with SOT223 package.  The design includes bulk and bypass capacitors on both the input and output of the regulator to help eliminate current spikes and noise.
