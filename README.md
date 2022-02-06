@@ -42,7 +42,7 @@ My implementation uses two 10uF capacitors in place of the 22uF capacitor becaus
 
 The variable power supply design is based around the LM317 adjustable linear voltage regulator.  The specific version used here is the LM317DCYR from Texas Instruments.
 
-After looking through the [LM317DCYR Datasheet](https://rocelec.widen.net/view/pdf/mlzstqhekh/slvs044x.pdf?t.download=true&u=5oefqw), I settled on using the typical application schematic for my adjustable regulator design.  This design has a few more components than necessary such as the diodes D1 and D2, but they are a good idea to help prevent Cadj and Co from discharging onto the output of the regulator.
+After looking through the [LM317DCYR Datasheet](https://rocelec.widen.net/view/pdf/mlzstqhekh/slvs044x.pdf?t.download=true&u=5oefqw), I settled on using the typical application schematic for my adjustable regulator design.  This design has a few more components than necessary such as the diodes D1 and D2, but they are a good idea to help prevent Cadj and Co from discharging onto the output of the regulator.  The potentiometer is in parallel with another resistor to reduce the maximum resistance value to 5K Ohms while being able to use a 10K potentiometer that we have on hand.
 
 ![Sheet symbol blocks](documentation/assets/img/LM317TypicalApplication.jpg)
 
